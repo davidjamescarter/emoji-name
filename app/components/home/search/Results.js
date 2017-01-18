@@ -1,8 +1,8 @@
 import React from "react";
 
 import Emoji from './results/Emoji';
-
 import RandomEmoji from './results/RandomEmoji';
+import SearchEmoji from './results/SearchEmoji';
 
 export default class Contact extends React.Component {
 
@@ -10,26 +10,31 @@ export default class Contact extends React.Component {
 
   	let result = null;
 
-  	if (this.props.name == null) {
+    if (this.props.search == ''){
 
-      // console.log('random', this.props.search);
+      result = <SearchEmoji />;
+
+    }
+  	else if (this.props.name == null) {
 
       result = <RandomEmoji search={this.props.search}/>;
 
     } else {
 
-      // console.log('not random',  this.props.name.emoji);
-
       result = <Emoji emoji={this.props.name.emoji} search={this.props.search}/>;
 
     }
 
-
-
     return (
+
       	<div className="emoji_wrap">
+
       		{result}
+
         </div>
+
     );
+
   }
+
 }

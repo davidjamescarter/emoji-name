@@ -35,13 +35,17 @@ export default class Share extends React.Component {
 
 	render() {
 
+		var share = 'Share!';
+		
+		var dontShare = 'Don\'t Share!';
+
 	    return (	
 	    	<div className="share_box">
 	    			{
 	    				this.state.search
 	    			}
 			        <button className="primary" onClick={this.onClick.bind(this)}>
-			           <span>Share!</span>
+			           <span>{this.state.childVisible? dontShare : share}</span>
 			        </button>
 			        {
 				   		this.state.childVisible

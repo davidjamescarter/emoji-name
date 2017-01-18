@@ -5,7 +5,9 @@ export default class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        <h1>Emoji Name</h1>     
+        <Link to="/">
+        	<h1>Emoji Name</h1>    
+        </Link>
       </header>
     );
   }

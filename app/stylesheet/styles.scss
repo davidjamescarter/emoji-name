@@ -14,6 +14,10 @@ h1{
   text-align: center;
   padding: 30px 0 30px 0;
   font-size: 75px;
+  @media only screen and (max-width: 720px) {
+    font-size: 55px;
+    padding: 15px 0 15px 0;
+  }
 }
 h2{
   text-align: center;
@@ -50,6 +54,9 @@ input[type=text] {
   border: 0;
   text-align: center;
   font-family: 'Pacifico', cursive;
+  @media only screen and (max-width: 720px) {
+    font-size: 40px;
+  }
   &:focus{
     outline: 0;
   }
@@ -57,9 +64,17 @@ input[type=text] {
 .emoji_wrap{
   text-align: center;
   margin: 60px 0 0;
+  position: relative;
+  height: 300px;
+  @media only screen and (max-width: 720px) {
+    height: 250px;
+  }
   object{
     width: 120px;
-    margin: 0 10px
+    margin: 0 10px;
+    @media only screen and (max-width: 720px) {
+      width: 100px;
+    }
   }
 }
 
@@ -84,6 +99,12 @@ input[type=text] {
 
 .share_box{
   margin: 60px 0 0 0;
+  position: absolute;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   .share_box-overlay{
     position: fixed;
     top: 50%;
@@ -93,18 +114,19 @@ input[type=text] {
     background-color: #FFFFFF;
     border: 8px solid #245479;
   }
-  button.share_box-overlay-close{
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    border: 8px solid #245479;
-    font-size: 18px;
-    cursor: pointer;
-  }
+  // button.share_box-overlay-close{
+  //   font-family: Arial, sans-serif;
+  //   position: absolute;
+  //   top: -15px;
+  //   right: -15px;
+  //   border-radius: 50%;
+  //   width: 20px;
+  //   height: 20px;
+  //   background: #ffffff;
+  //   border: 8px solid #245479;
+  //   font-size: 18px;
+  //   cursor: pointer;
+  // }
   input{
     font-size: 16px;
   }
@@ -128,6 +150,9 @@ button.primary , a.primary{
   transition: box-shadow .1s ease-in-out;
   font-size: 50px;
   color: #fff;
+  @media only screen and (max-width: 720px) {
+    font-size: 30px;
+  }
 }
   button.primary span ,  a.primary span{
     display: inline-block;
