@@ -98,7 +98,18 @@ const names = [
 		id: 20,
 		name: 'makerversity',
 		emoji: ':rainbow: :rainbow: :rainbow:'
+	},
+	{
+		id: 21,
+		name: 'Sarah Elwell',
+		emoji: ':cheese: :cheese: :cheese:'
+	},
+	{
+		id: 22,
+		name: 'sarah elwell',
+		emoji: ':cheese: :cheese: :cheese:'
 	}
+
 
 ];
 export default names;
