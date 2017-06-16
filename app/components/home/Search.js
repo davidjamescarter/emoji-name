@@ -7,7 +7,7 @@ export default class Search extends React.Component {
 	constructor() {
     	super();
     	this.state = {
-      		search: 'Donald Trump'
+      		search: 'Jeremy Corbyn'
     	};	
   	}
 
@@ -19,10 +19,12 @@ export default class Search extends React.Component {
 
 	render() {
 
+		const searchTerm = this.state.search.toLowerCase();
+
 		let foundName = this.props.names.find(
 			(name) => {
 
-				return name.name === this.state.search;	
+				return name.name === searchTerm;	
 
 			}
 

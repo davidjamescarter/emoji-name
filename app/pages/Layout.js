@@ -11,19 +11,18 @@ export default class Layout extends React.Component {
   render() {
 
     return (
-      
-      <div className="grid_container">
+      <div>
+        <div className="grid_container">
 
-        <Header />
+          <Header />
 
-        <div className="grid_row">
-          {this.props.children}
+          <div className="grid_row">
+            {this.props.children}
+          </div>
+
         </div>
-
-        <Link target="_blank" to="http://www.david-carter.co/">Created By David Carter</Link>
-
+        <Link className="author" target="_blank" to="http://www.david-carter.co/">Created By David Carter</Link>
       </div>
-
     );
 
   }

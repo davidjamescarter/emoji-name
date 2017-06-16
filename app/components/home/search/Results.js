@@ -6,7 +6,9 @@ import SearchEmoji from './results/SearchEmoji';
 
 export default class Contact extends React.Component {
 
-  render() {
+  render() {  
+
+    console.log(this.props);
 
   	let result = null;
 

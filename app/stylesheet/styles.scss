@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body{
-	background-color: #D89F53;
+	background-color: #30f1cd;
 }
 
 
@@ -27,7 +27,11 @@ h2{
 p, h2, h3, button, a{
   font-family: 'Pacifico', cursive;
 }
-
+a.author{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
 
 
 .grid_container{
